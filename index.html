@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="light.js">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #switch_on{
+            margin-top:2em;
+            padding: 1em;
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            margin-right: 1em;
+        }
+        
+        #switch_off{
+            margin-top:2.5em;
+            padding: 1em;
+            color: white;
+            background-color: red;
+            font-weight: bolder;
+        }
+        button:hover{
+            cursor: pointer;
+            border: 2px solid white;
+        }
+        button:active{
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <img id="bulb" src="light_off.png" alt="">
+    <div>
+    <button id="switch_on" onclick="switchOn()">switch ON</button>
+    <button id="switch_off" onclick="switchOff()">switch OFF</button>
+    </div>
+    <script src="light.js" type="text/javascript"></script>
+</body>
+</html>
